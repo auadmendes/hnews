@@ -1,0 +1,26 @@
+[
+  {
+    "variation": "default",
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {}
+    ],
+    "primary": {
+      "title": [
+        {
+          "type": "paragraph",
+          "text": "Laborum laboris ad quis non laboris. Velit Lorem est anim officia.",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Proident aliquip quis ut voluptate fugiat proident proident ullamco in Lorem Lorem. Consectetur laborum nulla dolor.",
+          "spans": []
+        }
+      ]
+    },
+    "slice_type": "pots"
+  }
+]
