@@ -1,34 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="left">
+  hnews
+</h1>
 
-## Getting Started
+[HNews _ Home (1).webm](https://user-images.githubusercontent.com/5294488/205950425-f4435bfe-bb4d-4ac9-98ff-74fd1917d594.webm)
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+<p align="left"> Hi, I'm Luciano Horta 🖖 </p>
+<p> <img src="https://komarev.com/ghpvc/?username=auadmendes&color=yellow" alt="Profile Views" /> </p>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 🚀 Studying with #Rocketseat
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- 💾 Current work on Trustly as a Client Support Analyst 
+- All my projects are available at [GitHub](https://github.com/auadmendes)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- This project was made with <b>JavaScript - TypeScript - SCSS</b> and <b>HTML</b>
+- Download it and follow the steps.
 
-## Learn More
+- <h4> Install the dependences </h4>
 
-To learn more about Next.js, take a look at the following resources:
+> npm install .
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- <h4> Start Project </h4>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+> npm run dev
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- You can find the [Figma project](https://www.figma.com/file/btDx26DuXYsL7spiaIgDQj/ig.news-(Copy)?node-id=1%3A3&t=S1nboTiokkV91Bm0-0) here.
+- 🙃 Fun fact I'm still thinking I am <b>copying code<b>
