@@ -32,7 +32,7 @@ interface PostsProps {
 }
 
 export default function Post({ post }: PostsProps) {
-  const { data } = useSession()
+  //const { data } = useSession()
 
 
   const response = post.map(post => {
@@ -105,9 +105,6 @@ export const getServerSideProps: GetServerSideProps = async ({ req, query }) => 
 
   const userActiveSubscription = await getSubscription(session?.user.email)
 
-  // console.log(userActiveSubscription)
-
-
   const post = (await getPostBySlug(String(slug)))
 
   if (!userActiveSubscription?.activeSubscription) {
@@ -118,7 +115,6 @@ export const getServerSideProps: GetServerSideProps = async ({ req, query }) => 
       }
     }
   }
-
 
 
   return {
