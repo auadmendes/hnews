@@ -5,12 +5,10 @@ import { getSession, useSession } from "next-auth/react"
 import { getPostBySlug } from "../../services/graphql"
 import { RichText } from '@graphcms/rich-text-react-renderer';
 import Head from "next/head"
-import { useEffect } from "react"
+
 import { getSubscription } from "../../services/queryFauna"
 
-import { query as q } from 'faunadb'
-import { fauna } from "../../services/fauna"
-import { redirect } from "next/dist/server/api-utils"
+
 interface PostsProps {
   post: {
     node: {
