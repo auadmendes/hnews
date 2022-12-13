@@ -1,7 +1,7 @@
 import { format } from "date-fns"
 import { ptBR } from "date-fns/locale"
 import { GetServerSideProps } from "next"
-import { getSession, useSession } from "next-auth/react"
+import { getSession } from "next-auth/react"
 import { getPostBySlug } from "../../services/graphql"
 import { RichText } from '@graphcms/rich-text-react-renderer';
 import Head from "next/head"
@@ -32,8 +32,6 @@ interface PostsProps {
 }
 
 export default function Post({ post }: PostsProps) {
-  //const { data } = useSession()
-
 
   const response = post.map(post => {
 
