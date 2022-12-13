@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { format } from 'date-fns'
 import { ptBR } from "date-fns/locale";
-import { GetServerSideProps } from "next";
+import { GetServerSideProps, GetStaticProps } from "next";
 import { getPost } from "../../services/graphql";
 
 
@@ -29,7 +29,6 @@ interface PostsProps {
 }
 
 export default function Post({ posts }: PostsProps) {
-  //const [resume, setResume] = useState(false)
 
   const newPost = posts.map(post => {
 
@@ -84,7 +83,7 @@ export default function Post({ posts }: PostsProps) {
     </>
   )
 }
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const posts = (await getPost() || [])
 
   return {

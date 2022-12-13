@@ -4,9 +4,6 @@ import GoogleProvider from "next-auth/providers/google";
 import GithubProvider from "next-auth/providers/github"
 import { query as q } from 'faunadb'
 import { fauna } from "../../../services/fauna";
-import { getSession, useSession } from 'next-auth/react';
-
-//const session = getSession()
 
 export default NextAuth({
   
