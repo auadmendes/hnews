@@ -82,31 +82,31 @@ export default function PostPreview({ post }: PostsPreviewProps2) {
   useEffect(() => {
     if (session.data) {
 
-      router.push(`/posts/${data.slug}`)
+      router.push(`/posts/${dataPost.slug}`)
     }
-  }, [data.slug, router, session])
+  }, [dataPost.slug, router, session])
 
 
   return (
     <>
       <Head>
-        <title>{data.title} | Posts</title>
+        <title>{dataPost.title} | Posts</title>
       </Head>
 
 
       <main className="flex flex-col max-w[1120px] my-0 m-auto py-0 px-8">
 
-        <article key={data.id} className="max-w-[720px] mt-20 mx-auto mb-0">
+        <article key={dataPost.id} className="max-w-[720px] mt-20 mx-auto mb-0">
           <h1 className="text-5xl font-black mb-6">
-            {data.title}
+            {dataPost.title}
           </h1>
           <time className="block text-base text-gray-300">
-            {data.createdAt}
+            {dataPost.createdAt}
           </time>
           <div className="text-lg text-gray-100 leading-8 max-h-[300px]
               text-transparent bg-clip-text bg-gradient-to-b from-gray-300 to-black-600 mb-16
               ">
-            <RichText content={data.content}
+            <RichText content={dataPost.content}
               renderers={{
                 h1: ({ children }) => <h1 className="text-yellow-500 text-3xl ">{children}</h1>,
                 h2: ({ children }) => <h1 className="text-white text-2xl">{children}</h1>,
@@ -121,7 +121,7 @@ export default function PostPreview({ post }: PostsPreviewProps2) {
               }}
             />
           </div>
-          <span>Writen by </span> <strong className="text-cyan-500">{data.author}</strong>
+          <span>Writen by </span> <strong className="text-cyan-500">{dataPost.author}</strong>
         </article>
 
         <div className="max-w[720px] mt-8 my-0 m-auto text-lg p-8 text-center rounded-full bg-gray-800">
