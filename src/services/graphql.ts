@@ -36,8 +36,8 @@ export const getPostBySlug = async (slug: string ) => {
   const pageSlug = slug
   
   const query = gql`
-  query($pageSlug: String!) {
-    postsConnection(where: {slug: $pageSlug}) {
+  query() {
+    postsConnection() {
     edges {
       node {
         title
@@ -61,8 +61,6 @@ export const getPostBySlug = async (slug: string ) => {
     pageSlug,
   }
   const result = await request(graphqlAPI, query, variables )
-  
-  //console.log(result.postsConnection.edges)
 
 
   return  result.postsConnection.edges
