@@ -84,7 +84,7 @@ export default function PostPreview({ post }: PostsPreviewProps2) {
 
       router.push(`/posts/${data.slug}`)
     }
-  }, [session])
+  }, [data.slug, router, session])
 
 
   return (
