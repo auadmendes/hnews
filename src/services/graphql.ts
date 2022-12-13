@@ -1,4 +1,3 @@
-import { graphql } from 'graphql'
 import { request, gql } from 'graphql-request'
 
 const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT
@@ -36,8 +35,8 @@ export const getPostBySlug = async (slug: string ) => {
   const pageSlug = slug
   
   const query = gql`
-  query() {
-    postsConnection() {
+  query($pageSlug: String!) {
+    postsConnection(where: {slug: $pageSlug}) {
     edges {
       node {
         title

@@ -68,7 +68,7 @@ export default function PostPreview({ post }: PostsPreviewProps2) {
     locale: ptBR
   })
 
-  const data = {
+  const dataPost = {
 
     id: post.node.id,
     title: post.node.title,

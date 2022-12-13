@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { format } from 'date-fns'
 import { ptBR } from "date-fns/locale";
-import { GetServerSideProps, GetStaticProps } from "next";
+import { GetStaticProps } from "next";
 import { getPost } from "../../services/graphql";
 
 
