@@ -3,6 +3,7 @@ import { FaGoogle } from 'react-icons/fa'
 import { signIn } from 'next-auth/react'
 
 export function SigInWithGoogleButton() {
+  console.log('Here')
   return (
     <button
       onClick={() => signIn('google')}
