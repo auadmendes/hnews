@@ -9,7 +9,7 @@ import { useSession, signOut } from "next-auth/react"
 import Image from "next/image";
 import { useRouter } from "next/router";
 
-export function Header() {
+export function Header(e) {
   const { data } = useSession()
 
   const { asPath, query } = useRouter()
