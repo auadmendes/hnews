@@ -6,7 +6,6 @@ import { query as q } from 'faunadb'
 import { fauna } from "../../../services/fauna";
 
 export default NextAuth({
-  
   // Configure one or more authentication providers
   providers: [
     GithubProvider({
@@ -14,8 +13,9 @@ export default NextAuth({
       clientSecret: process.env.GITHUB_SECRET,
     }),
     GoogleProvider({
-      clientId: process.env.GOOGLE_CLIENT_ID,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET
+      clientId: '1023146677174-rvgemuttiq7e5ctj1pjn28qd78ebnaq9.apps.googleusercontent.com',
+      //process.env.GOOGLE_CLIENT_ID,
+      clientSecret: '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', //process.env.GOOGLE_CLIENT_SECRET
     }),
     // ...add more providers here
   ],
