@@ -19,7 +19,8 @@ export default NextAuth({
     // ...add more providers here
   ],
   pages: {
-    signIn: '/auth/signin'
+    signIn: '/auth/signin' 
+    // just using this line I would able to get over server error
   },
   callbacks: { 
   
